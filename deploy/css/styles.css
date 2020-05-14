@@ -9,7 +9,7 @@ html {
 /* =============
     Variables
 ============= */
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -29,6 +29,12 @@ html {
  */
 body {
   margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -317,7 +323,7 @@ figure {
 
 ul {
   padding: 0;
-  margin: 0; }
+  margin: 5px; }
   ul li {
     list-style: none; }
 
@@ -344,6 +350,7 @@ h1, h2, h3, h4 {
   padding: 0; }
 
 p {
+  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0; }
 
@@ -377,15 +384,170 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #000;
+  color: #fff;
+  height: 150px;
+  text-align: center; }
+  #footer .orangetext {
+    color: #E1593C; }
+  #footer div {
+    padding-top: 30px;
+    padding-bottom: 15px; }
+    #footer div img {
+      padding: 10px; }
+    @media (min-width: 992px) {
+      #footer div {
+        text-align: left;
+        padding-left: 20px; } }
+    @media (min-width: 1200px) {
+      #footer div {
+        padding-left: 190px; } }
+  @media (min-width: 992px) {
+    #footer p {
+      text-align: right;
+      padding-right: 20px;
+      margin-top: -50px; } }
+  @media (min-width: 1200px) {
+    #footer p {
+      padding-right: 190px;
+      margin-top: -40px; } }
 /* =============
     Section 1
 ============= */
+#section-1 {
+  background-image: url("../img/section-1/hero.jpg");
+  height: 690px;
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 800px; } }
+  @media (min-width: 1200px) {
+    #section-1 {
+      height: 960px; } }
+  #section-1 div h1 {
+    color: #1A4B58;
+    padding-top: 100px; }
+    @media (min-width: 768px) {
+      #section-1 div h1 {
+        padding-top: 70px; } }
+    @media (min-width: 992px) {
+      #section-1 div h1 {
+        padding-top: 100px; } }
+  #section-1 div h2 {
+    color: #338595; }
+  #section-1 img {
+    padding-top: 230px;
+    height: 90px; }
+    @media (min-width: 768px) {
+      #section-1 img {
+        padding-top: 280px;
+        height: 120px; } }
+    @media (min-width: 992px) {
+      #section-1 img {
+        padding-top: 320px;
+        height: 160px; } }
+    @media (min-width: 1200px) {
+      #section-1 img {
+        padding-top: 400px;
+        height: 190px; } }
 /* =============
     Section 2
 ============= */
+#section-2 {
+  background-color: #EEE; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-2-container ."; } }
+  @media (min-width: 768px) {
+    #section-2 #section-2-container {
+      display: grid;
+      grid-template-areas: "section-2-image section-2-content"; } }
+  @media (min-width: 1200px) {
+    #section-2 #section-2-container {
+      grid-area: section-2-container;
+      grid-template-columns: 50% auto; } }
+  @media (min-width: 992px) {
+    #section-2 #section-2-container {
+      grid-area: section-2-container;
+      grid-template-columns: 50% auto; } }
+  #section-2 #section-2-container section {
+    margin: 0 10px; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-container section {
+        margin: 30px; } }
+    #section-2 #section-2-container section #section-2-content {
+      grid-area: section-2-content;
+      padding-bottom: 30px; }
+      @media (min-width: 768px) {
+        #section-2 #section-2-container section #section-2-content {
+          grid-area: section-2-image; } }
+      #section-2 #section-2-container section #section-2-content h1 {
+        padding: 40px 10px 10px;
+        text-align: center; }
+        @media (min-width: 768px) {
+          #section-2 #section-2-container section #section-2-content h1 {
+            padding-top: 0px;
+            text-align: left; } }
+        @media (min-width: 992px) {
+          #section-2 #section-2-container section #section-2-content h1 {
+            padding: 110px 10px 10px 60px; } }
+        @media (min-width: 1200px) {
+          #section-2 #section-2-container section #section-2-content h1 {
+            padding: 100px 0px 10px 60px; } }
+      #section-2 #section-2-container section #section-2-content p {
+        text-align: left;
+        line-height: 20px; }
+        @media (min-width: 768px) {
+          #section-2 #section-2-container section #section-2-content p {
+            margin-left: 10px; } }
+        @media (min-width: 992px) {
+          #section-2 #section-2-container section #section-2-content p {
+            margin-left: 60px;
+            margin-right: 60px;
+            text-align: justify;
+            line-height: 25px; } }
+        @media (min-width: 1200px) {
+          #section-2 #section-2-container section #section-2-content p {
+            margin-right: 90px; } }
+  #section-2 #section-2-container aside {
+    background-image: url("../img/section-2/shoes.jpg");
+    background-size: cover;
+    height: 320px; }
+    @media (min-width: 768px) {
+      #section-2 #section-2-container aside {
+        height: 240px;
+        width: 240px; } }
+    @media (min-width: 992px) {
+      #section-2 #section-2-container aside {
+        height: 600px;
+        width: 600px; } }
+    @media (min-width: 1200px) {
+      #section-2 #section-2-container aside {
+        height: 600px;
+        width: 600px; } }
 /* =============
     Section 3
 ============= */
-/* =============
-    Section 4
-============= */
+#section-3 {
+  text-align: center;
+  padding-bottom: 40px; }
+  #section-3 h1 {
+    padding-top: 40px;
+    padding-bottom: 20px; }
+  #section-3 div figure {
+    display: inline-block;
+    padding: 10px; }
+  #section-3 div figcaption {
+    text-align: center;
+    background-color: #EEE;
+    margin-top: -4px;
+    padding-top: 10px; }
+    #section-3 div figcaption p {
+      text-align: justify;
+      padding-top: 5px;
+      margin-left: 10px; }

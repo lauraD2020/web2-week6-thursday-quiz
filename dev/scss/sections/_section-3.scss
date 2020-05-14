@@ -1,0 +1,39 @@
+/* =============
+    Section 3
+============= */
+#section-3{
+    text-align: center;
+    padding-bottom: 40px;
+    h1{
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    
+
+    div{
+       
+        figure {
+            display:inline-block;
+            padding: 10px;
+
+        }
+        figcaption {
+            text-align: center;
+            background-color: $gray;
+            margin-top: -4px;
+            padding-top: 10px;
+            
+            p{
+                text-align: justify;
+                padding-top: 5px;  
+                margin-left: 10px;
+            }
+
+           
+            
+        }
+    }
+    
+
+    
+}

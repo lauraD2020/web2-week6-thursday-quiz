@@ -2,8 +2,56 @@
     Section 1
 ============= */
 #section-1{
-    .grid-content{
-        
-    }
+    background-image: url('../img/section-1/hero.jpg');
+    height: 690px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 
+    @include lg{
+        height: 800px;
+    }
+    
+    @include xl{
+        height: 960px;            
+    }
+    
+    div{
+        h1{
+            color: $blue;
+            padding-top: 100px;
+            @include md{
+                 padding-top: 70px;
+            }
+            @include lg{
+                padding-top: 100px;
+           }
+     
+        }
+
+         h2{
+             color: $green;
+        }
+
+    }
+    img{
+        padding-top: 230px;
+        height: 90px;
+
+        @include md{
+            padding-top: 280px;
+            height: 120px;  
+        }
+
+        @include lg{
+            padding-top: 320px;
+            height: 160px;  
+        }
+
+        @include xl{
+            padding-top: 400px;
+            height: 190px;  
+        }
+    }
+    
 }
