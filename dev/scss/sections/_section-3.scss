@@ -14,7 +14,14 @@
        
         figure {
             display:inline-block;
-            padding: 10px;
+            padding: 20px;
+
+            @include md{
+                padding: 40px
+            }
+            @include lg{
+                padding: 30px
+            }
 
         }
         figcaption {
@@ -29,6 +36,11 @@
                 margin-left: 10px;
             }
 
+            div{
+                padding-bottom: 20px;
+                padding-top: 10px;
+            }
+            
            
             
         }

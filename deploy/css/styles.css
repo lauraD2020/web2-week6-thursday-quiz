@@ -429,7 +429,8 @@ textarea {
       height: 960px; } }
   #section-1 div h1 {
     color: #1A4B58;
-    padding-top: 100px; }
+    padding-top: 100px;
+    padding-bottom: 20px; }
     @media (min-width: 768px) {
       #section-1 div h1 {
         padding-top: 70px; } }
@@ -439,19 +440,19 @@ textarea {
   #section-1 div h2 {
     color: #338595; }
   #section-1 img {
-    padding-top: 230px;
+    padding-top: 210px;
     height: 90px; }
     @media (min-width: 768px) {
       #section-1 img {
-        padding-top: 280px;
+        padding-top: 260px;
         height: 120px; } }
     @media (min-width: 992px) {
       #section-1 img {
-        padding-top: 320px;
+        padding-top: 300px;
         height: 160px; } }
     @media (min-width: 1200px) {
       #section-1 img {
-        padding-top: 400px;
+        padding-top: 380px;
         height: 190px; } }
 /* =============
     Section 2
@@ -541,7 +542,13 @@ textarea {
     padding-bottom: 20px; }
   #section-3 div figure {
     display: inline-block;
-    padding: 10px; }
+    padding: 20px; }
+    @media (min-width: 768px) {
+      #section-3 div figure {
+        padding: 40px; } }
+    @media (min-width: 992px) {
+      #section-3 div figure {
+        padding: 30px; } }
   #section-3 div figcaption {
     text-align: center;
     background-color: #EEE;
@@ -551,3 +558,6 @@ textarea {
       text-align: justify;
       padding-top: 5px;
       margin-left: 10px; }
+    #section-3 div figcaption div {
+      padding-bottom: 20px;
+      padding-top: 10px; }

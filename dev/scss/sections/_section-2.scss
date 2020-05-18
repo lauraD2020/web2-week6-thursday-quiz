@@ -5,9 +5,9 @@
     background-color: $gray;
     
    @include xl{
-    display: grid;
-    grid-template-columns: auto 1200px auto;
-    grid-template-areas: ". section-2-container .";
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2-container .";
     }
 
     #section-2-container{

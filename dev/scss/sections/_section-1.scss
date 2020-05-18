@@ -20,6 +20,7 @@
         h1{
             color: $blue;
             padding-top: 100px;
+            padding-bottom: 20px;
             @include md{
                  padding-top: 70px;
             }
@@ -35,21 +36,21 @@
 
     }
     img{
-        padding-top: 230px;
+        padding-top: 210px;
         height: 90px;
 
         @include md{
-            padding-top: 280px;
+            padding-top: 260px;
             height: 120px;  
         }
 
         @include lg{
-            padding-top: 320px;
+            padding-top: 300px;
             height: 160px;  
         }
 
         @include xl{
-            padding-top: 400px;
+            padding-top: 380px;
             height: 190px;  
         }
     }
